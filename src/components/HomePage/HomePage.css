@@ -19,7 +19,7 @@
 }
 
 .navbar ul{
-    padding-left: 75%;
+    padding-left: 60%;
     display: flex;
     gap: 23px;
 }
@@ -57,4 +57,37 @@ button{
 
 button:focus {
     background-color: rgb(13, 127, 165);
+}
+
+.togglebutton{
+    width: 60px;
+    height: 30px;
+    background-color: #d2d2d2;
+    border-radius: 100px;
+    cursor: pointer;
+    position: relative;
+    margin-left: 90px ;                 ;
+    
+}
+
+.togglebutton::before{
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    padding: 5px;
+    transform: translateX(-27px);
+    transition: 0.2s;
+}
+input:checked + .togglebutton {
+    background-color: blue;
+}
+
+input:checked + .togglebutton::before{
+    transform: translateX(3px);
+}
+input{
+    display: none;
 }

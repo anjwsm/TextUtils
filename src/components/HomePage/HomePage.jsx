@@ -38,6 +38,9 @@ export default function HomePage(props) {
           <li>Home </li>
           <li>{props.about} </li>
         </ul>
+        <input type="checkbox" id="check" />
+        <label htmlFor="check" className="togglebutton" />
+       
       </nav>
 
       <div className="form-container">
