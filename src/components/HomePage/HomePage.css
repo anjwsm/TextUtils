@@ -91,3 +91,12 @@ input:checked + .togglebutton::before{
 input{
     display: none;
 }
+h2{
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+p{
+    margin-top: 10px;
+    font-size: 20px;
+}

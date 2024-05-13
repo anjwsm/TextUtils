@@ -25,6 +25,12 @@ export default function HomePage(props) {
     setText(sentencecase) ;
   }
 
+  const handleCopy = () => {
+    var text = document.getElementById("myBox");
+    text.select() ;
+    navigator.clipboard.writeText(text.value) ;
+  }
+
   const allClear = () => {
     let newText = "";
     setText(newText);
@@ -49,6 +55,7 @@ export default function HomePage(props) {
         <textarea
           className="textarea"
           placeholder="Enter your text here"
+          id="myBox"
           value={text}
           onChange={handleChange}
         ></textarea>
@@ -57,6 +64,7 @@ export default function HomePage(props) {
           <button onClick={toUpCase}>To Uppercase</button>
           <button onClick={toLoCase}>To Lowercase</button>
           <button onClick={toSentencecase}>To Sentencecase  </button>
+          <button onClick={handleCopy}>Copy the text  </button>
           <button onClick={allClear}> Clear All </button>
         </div>
       </div>
