@@ -31,6 +31,11 @@ export default function HomePage(props) {
     navigator.clipboard.writeText(text.value) ;
   }
 
+  const handleWhiteSpace = () => {
+    let newText = text.split(/[ ] + /) ;
+    setText(newText.join(" "))
+  }
+
   const allClear = () => {
     let newText = "";
     setText(newText);
@@ -64,7 +69,8 @@ export default function HomePage(props) {
           <button onClick={toUpCase}>To Uppercase</button>
           <button onClick={toLoCase}>To Lowercase</button>
           <button onClick={toSentencecase}>To Sentencecase  </button>
-          <button onClick={handleCopy}>Copy the text  </button>
+          <button onClick={handleCopy}>Copy The text  </button>
+          <button onClick={handleWhiteSpace}>Remove Whitespace  </button>
           <button onClick={allClear}> Clear All </button>
         </div>
       </div>

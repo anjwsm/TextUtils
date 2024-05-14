@@ -35,15 +35,18 @@
 
 .textarea{
     margin-top: 20px;
-    width: 700px;
+    width: 800px;
     height: 300px;
     padding: 20px;
 }
 .button-container{
     margin-top: 10px;
+    width: 800px;
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
+    justify-content: left ;
+    margin-left: 500px;
 }
 
 button{
