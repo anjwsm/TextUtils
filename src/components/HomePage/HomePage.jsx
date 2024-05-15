@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./HomePage.css";
 import propTypes from "prop-types";
 
-export default function HomePage(props) {
+export default function HomePage() {
   const [text, setText] = useState("");
 
   const handleChange = (event) => {
@@ -43,16 +43,7 @@ export default function HomePage(props) {
 
   return (
     <div className="container">
-      <nav className="navbar">
-        <p className="title">{props.title}</p>
-        <ul>
-          <li>Home </li>
-          <li>{props.about} </li>
-        </ul>
-        <input type="checkbox" id="check" />
-        <label htmlFor="check" className="togglebutton" />
-       
-      </nav>
+
 
       <div className="form-container">
         <h1>Enter the text below to analyze </h1>
