@@ -47,7 +47,7 @@ input:checked + .togglebutton {
 }
 
 input:checked + .togglebutton::before{
-    transform: translateX(27px);
+    transform: translateX(29px);
 }
 input{
     display: none;
