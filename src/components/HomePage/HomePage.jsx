@@ -59,7 +59,7 @@ export default function HomePage() {
         <div className="button-container">
           <button onClick={toUpCase}>To Uppercase</button>
           <button onClick={toLoCase}>To Lowercase</button>
-          <button onClick={toSentencecase}>To Sentencecase  </button>
+          {/* <button onClick={toSentencecase}>To Sentencecase  </button> */}
           <button onClick={handleCopy}>Copy The text  </button>
           <button onClick={handleWhiteSpace}>Remove Whitespace  </button>
           <button onClick={allClear}> Clear All </button>
