@@ -19,11 +19,11 @@ export default function HomePage() {
     setText(newText);
   };
 
-  const toSentencecase =() => {
-    let newText = text.split(" ") ;
-    let sentencecase = newText.forEach[0].toUpperCase();
-    setText(sentencecase) ;
-  }
+  // const toSentencecase =() => {
+  //   let newText = text.split(" ") ;
+  //   let sentencecase = newText.forEach[0].toUpperCase();
+  //   setText(sentencecase) ;
+  // }
 
   const handleCopy = () => {
     var text = document.getElementById("myBox");
